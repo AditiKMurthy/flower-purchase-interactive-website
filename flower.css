@@ -1,0 +1,335 @@
+:root {
+  /* --blue: #e84393; */
+  --blue: #3458db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255, 51, 153, 0.05);
+}
+
+.heading span {
+  color: var(--blue);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: var(--blue);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(207, 8, 8, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 0 0.5rem 1.5rem rgb(255, 81, 0);
+}
+
+header .logo span {
+  color: var(--blue);
+}
+
+header .navbar a {
+  font-size: 2.5rem;
+  color: #666;
+  padding: 0 1.5rem;
+  padding-left: 3rem;
+}
+
+header .navbar a:hover {
+  color: var(--blue);
+}
+
+header .icons a {
+  font-size: 3rem;
+  color: #333;
+  margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+  color: var(--blue);
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #333;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.3rem solid rgba(20, 16, 16, 0.3);
+  display: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  /* background: url(https://wallpaper.forfun.com/fetch/c7/c7bf0477c6a995b1d104fdafa3dfc08d.jpeg)
+    no-repeat; */
+  background: url(https://images.unsplash.com/photo-1653379291407-41cdecb056de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  max-width: 50rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  color: #333;
+}
+
+.home .content span {
+  font-size: 3.5rem;
+  color: var(--blue);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.home .content p {
+  font-size: 1.6rem;
+  font-family: Arial;
+  color: black;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.about .row .video-container {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about .row .video-container img {
+  width: 100%;
+  border: 1.5rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .row .video-container h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #333;
+  background: #fff;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.about .row .content p {
+  font-size: 1.5rem;
+  color: #999;
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+.icons-container {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.icons-container .icons {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icons-container .icons img {
+  margin-right: 2rem;
+}
+
+.icons-container .icons h3 {
+  color: #333;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.icons-container .icons span {
+  color: #555;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.products .box-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.7rem 1rem;
+  /* color: var(--blue); */
+  background: rgba(207, 8, 8, 0.1);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.products .box-container .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.products .box-container .box .image img {
+  height: 25rem;
+}
+
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.products .box-container .box:hover .image .icons {
+  bottom: 0;
+}
+
+.products .box-container .box .image .icons a {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background-color: #f1ad91;
+  color: #fff;
+  text-align: center;
+}
+
+.products .box-container .box .image .icons .cart-btn {
+  border-left: 0.1rem solid #fff7;
+  border-right: 0.1rem solid #fff7;
+  width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover {
+  background: #333;
+}
+
+.products .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* to ceenter the share icon */
+/* .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+} */
+
+/* to make heart red */
+.fas.fa-heart.active {
+  color: red !important;
+}
